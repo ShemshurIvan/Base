@@ -19,11 +19,11 @@ public class Book {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "year")
-    private Integer year;
+    @Column(name = "publication_year")
+    private Integer publicationYear;
 
-    public Book(String title, Integer year) {
+    public Book(String title, Integer publicationYear) {
         this.title = title;
-        this.year = year;
+        this.publicationYear = publicationYear;
     }
 }
