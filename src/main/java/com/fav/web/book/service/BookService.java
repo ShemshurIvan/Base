@@ -19,11 +19,6 @@ public class BookService {
 
     private final BookDAO bookDAO;
 
-    @GetMapping("/list")
-    public List<Book> list(){
-        return bookDAO.findAll();
-    }
-
     @Transactional
     public Book createNewBook(Book book){
         if(book.getPublicationYear() > Year.now().getValue()){
